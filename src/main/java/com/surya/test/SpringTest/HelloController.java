@@ -10,11 +10,11 @@ public class HelloController {
 
     @GetMapping("/")
     public String welcome(){
-        return  "welcome form spring boot";
+        return  "Welcome form spring boot";
     }
 
     @GetMapping("/user/{name}")
     public String welcomeUser(@PathVariable String name) {
-        return "welcome to spring boot" + name;
+        return "Welcome to spring boot" + name;
     }
 }
